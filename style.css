@@ -1,9 +1,11 @@
 body{
     /* https://www.color-hex.com/color/d3d3d3 */
-    background-color: #fff; /*#f6f6f6, EBEBD3, fafafa*/
+    background-color: #000000; /*#f6f6f6, EBEBD3, fafafa*/
     font-family: Bungee Outline;
     font-weight: 900;
-  
+    background-image: url(./assests/lipstick-killer-note.webp);
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
     animation: blur 0.5s ease-out;
   
@@ -23,11 +25,12 @@ body{
     justify-content: center;
     align-items: center;
   
-    background-color: #D64045;/*#467599;*/
-    border-bottom: 5px solid #fff;
-    box-shadow: 0 0 30px -18px #D64045;
+    background-color: #302d2d;/*#467599;*/
+    border-bottom: 5px solid #000000;
+    box-shadow: 0 0 30px -18px #3b3939;
   
   }
+  
   #title_inner_container{
     width: 100%;
     height: 100%;
@@ -35,13 +38,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    background-image: url(https://images.unsplash.com/photo-1536850428371-f12bc9f3159a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80);
+    background-position: center;
     /* background-color: #083D77; */
-    border-radius: 200px;
+    border-radius: 0px;
   }
   #title{
     display: inline-block;
-    color: #fff;/*EBEBD3, C5283D*/
+    color: #000000;/*EBEBD3, C5283D*/
     font-size: 55px;
     letter-spacing: 2px;
     user-select: none;
@@ -110,10 +114,21 @@ body{
     color: #fff;
   }
   
+ #background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+ }
   #chat_container{
     width: 100%;
     height: 450px;
-  
+    
     display: flex;
     justify-content: center;
   
@@ -156,7 +171,7 @@ body{
     height: 100%;
     float: left;
     background-color: Transparent;
-    color: #1D3354;
+    color: #0bf11e;
     font-size: 15px;
   }
   #chat_input_send{
@@ -164,14 +179,14 @@ body{
     height: 100%;
     float: left;
     font-size: 18px;
-    background-color: rgb(2, 32, 39);
+    background-color: rgb(80, 3, 48);
     text-align: right;
     color: #5011b4;
   }
   #chat_input_send.enabled{
     color: #D64045;
-    background-color: Transparent;
     cursor: pointer;
+    
   
   }
   #chat_logout_container{
@@ -232,12 +247,13 @@ body{
   }
   #title_container.chat_title_container{
     transition: 0.8s;
+    background-color: Transparent;
     transition-timing-function: ease-in-out;
     height: 100px;
   }
   #title.chat_title{
     transition: 0.8s;
-    font-size: 47px;
+    font-size: 30px;
   }
   .loader_container{
     width: 100%;
