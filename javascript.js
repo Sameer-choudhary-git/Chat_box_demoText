@@ -1,3 +1,6 @@
+alert("Disclaimer!!!\nRead each and every pop-up aleart or massage carefully.\nDont ignore anything!");
+alert("You have entered Darvaza gas crater(Door to Hell), from this time you become a member of crater web\nRunning or trying to escape is vain, you have to tell resone if you want to escape because everyone is getting track in crater web\nHappy Journy");
+
 // We enclose this in window.onload.
 // So we don't have ridiculous errors.
 window.onload = function() {
@@ -49,7 +52,7 @@ window.onload = function() {
   
         var title = document.createElement('h1')
         title.setAttribute('id', 'title')
-        title.textContent = 'MemeChat 2.0'
+        title.textContent = 'Darvaza gas crater'
   
         title_inner_container.append(title)
         title_container.append(title_inner_container)
